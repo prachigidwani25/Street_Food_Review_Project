@@ -1,0 +1,279 @@
+•⁠  ⁠{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+header {
+    background-color:azure;
+    color: black;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.container.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fff0d1;
+}
+.hero {
+    position: relative;
+    background-image: url('https://img.freepik.com/free-photo/street-food-frame-wooden-background_23-2148242555.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    background-size: cover;
+    
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.55);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 600px;
+    padding: 0 8%;
+}
+
+.hero-text h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.hero-text p {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    color: #f0f0f0;
+}
+
+/* Search box inside hero */
+.search-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 90%;
+    max-width: 400px;
+}
+
+.search-box input {
+    border: none;
+    padding: 12px 15px;
+    outline: none;
+    width: 100%;
+    font-size: 1em;
+}
+
+.search-box button {
+    background: #ff8731;
+    border: none;
+    padding: 12px 15px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.1em;
+}
+
+/* ===== TOP FOODS ===== */
+.top-foods {
+    background-color: #ffe48a;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.top-foods h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #4a2c00;
+}
+
+.food-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 90%;
+    margin: auto;
+    background-color:#ffe48a;
+}
+
+.food-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    width: 250px;
+    padding-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.food-card:hover {
+    transform: scale(1.05);
+}
+
+.food-card img {
+    width: 100%;
+    height: 160px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+.food-card h3 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.food-card p {
+    color: #777;
+    font-size: 0.9em;
+}
+
+.rating {
+    margin-top: 5px;
+    color: #ffb400;
+    font-size: 1.2em;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about {
+    background-color: #fff6e0;
+    padding: 60px 15px;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 2em;
+    color: #4a2c00;
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact {
+    background-color: #ffe9c2;
+    padding: 60px 15px;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.contact h2 {
+    font-size: 2em;
+    color: #4a2c00;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.contact-details p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #333;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #ff8731;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.95em;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .container.nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-text {
+        padding: 0 5%;
+    }
+
+    .hero-text h1 {
+        font-size: 2em;
+    }
+
+    .hero-text p {
+        font-size: 1em;
+    }
+
+    .search-box {
+        margin: 0 auto;
+    }
+
+    .food-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .food-card {
+        width: 80%;
+    }
+}
